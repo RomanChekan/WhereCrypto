@@ -261,6 +261,9 @@ a:link {
     height: 50px;
     width: 600px;
 }
+input[type="text"]:focus {
+    border-color: yellow    ;
+}
 
 /*Search Page Styling */
 .search table {

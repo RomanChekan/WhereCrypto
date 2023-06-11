@@ -10,6 +10,6 @@ input.addEventListener("keypress", function(event) {
   }
 });
 
-document.getElementById("focus").addEventListener("click", () => {
-  document.getElementById("search_country").focus();
-})
+function focusInput() {
+    document.getElementById("inp_box").focus();
+}

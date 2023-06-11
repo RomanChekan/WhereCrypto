@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="{% static 'style/style2.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'style/footerStyle.css' %}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="{% static 'scripts/buttons.js' %}"></script>
   </head>
 
   <body>
@@ -49,15 +48,15 @@
         {% endif %}
           <form method="get" action="{% url 'search' %}">
               <div class="country_text" id="tu">
-                  <input type="text" placeholder="Enter your country here" name="search_country" id="search_country"/>
+                  <input type="text" placeholder="Enter your country here" name="search_country" id="inp_box"/>
                   <button class="btn">Search</button>
               </div>
           </form>
 
-          <!--<div class="country_text_mobile">
+          <div class="country_text_mobile">
               <input type="text" placeholder="Enter your country here">
               <button>Search</button>
-          </div>-->
+          </div>
         </div>
 
         <section class="style-cards" >
@@ -78,16 +77,16 @@
             </div>
         </section>
 
-        <section class="redirect_section">
+       <section class="redirect_section">
             <div class="redirect">
                 <div class="redirect_text">
                     <h1>Ready for searching?</h1>
                     <h3>Just press the button and type your desired country!</h3>
                 </div>
                 <div class="space"></div>
-                <a class="btn2" id="focus" href="">Get Started!</a>
+                <a href="#" onclick="focusInput()" class="btn2" id="get_started">Get Started!</a>
             </div>
-        </section>
+       </section>
 
         <div class="space2"></div>
     </main>
@@ -127,5 +126,7 @@
 
     <!-- Menu Bar Script -->
      <script src="{% static 'scripts/ham_menu.js' %}"></script>
+  <!-- Buttons scripts -->
+    <script src="{% static 'scripts/buttons.js' %}"></script>
   </body>
 </html>
